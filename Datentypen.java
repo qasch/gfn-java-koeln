@@ -76,6 +76,13 @@ public class Datentypen {
         System.out.println(stringlaenge);
         System.out.println(stringToUpper);
 
+        /* Konstanten */
+        // 'final' macht eine Variable zu einer Konstanten, werden in GROSSBUCHSTABEN geschrieben,
+        // Werte können nicht mehr geändert werden
+        final int MYINTCONST = 42;  
+        // MYINTCONST = 55;  -> führt zu Fehler, da Werte in Konstanten nicht geändert werden können
+        System.out.println("MYINTCONST: " + MYINTCONST);
+
     }
     
 }
