@@ -5,6 +5,7 @@ public class EinUndAusgabe {
     public static void main(String[] args){
 
         // Erzeugung des Objekts 'input' vom Datentyp 'Scanner'
+        // 'input' ist hier der Name einer Variablen und frei wählbar
         Scanner input = new Scanner(System.in);
         // Ausgabe, Aufforderung, etwas einzugeben
         System.out.println("Bitte gib irgendetwas ein: ");
