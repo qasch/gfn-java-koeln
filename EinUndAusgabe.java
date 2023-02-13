@@ -12,6 +12,8 @@ public class EinUndAusgabe {
         String eingabe = input.nextLine(); 
         // Ausgabe 
         System.out.println("Du hat folgendes eingegeben: " + eingabe);
+        // guter Stil: Scanner schliessen
+        input.close();
 
     }
     
