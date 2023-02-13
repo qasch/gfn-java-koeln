@@ -13,6 +13,14 @@ public class EinUndAusgabe {
         String eingabe = input.nextLine(); 
         // Ausgabe 
         System.out.println("Du hat folgendes eingegeben: " + eingabe);
+
+
+        System.out.println("Bitte gib eine ganze Zahl ein: ");
+        int zahl = input.nextInt();
+
+        zahl = zahl + 5;
+        System.out.println("Zahl plus 5 = " + zahl);
+
         // guter Stil: Scanner schliessen
         input.close();
 
