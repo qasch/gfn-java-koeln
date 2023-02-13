@@ -18,8 +18,14 @@ public class EinUndAusgabe {
         System.out.println("Bitte gib eine ganze Zahl ein: ");
         int zahl = input.nextInt();
 
-        zahl = zahl + 5;
-        System.out.println("Zahl plus 5 = " + zahl);
+        // int ergebnis = zahl + 5;
+        // System.out.println(zahl + " + 5 = " + ergebnis);
+
+        // Gleich wie oben, ohen zusätzliche Variable 'ergebnis'
+        // Vorsicht mit dem Casten!
+        System.out.println(zahl + " + 5 = " + (int) (zahl + 5));
+
+
 
         // guter Stil: Scanner schliessen
         input.close();
