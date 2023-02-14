@@ -7,6 +7,13 @@ public class EingabenPruefen {
 
         System.out.println("Bitte gib eine ganze Zahl ein: ");
 
+        // Check ob zahl ein Integer ist
+        if (! input.hasNextInt())      // ! negiert den Ausdruck, wir prüfen also, ob wir KEINEN Int vorliegen haben
+        {
+            System.out.println("Das war keine Zahl, Programm wird beendet.");
+            System.exit(1);         // Programm wird mit Exit Code 1 (Fehler) beendet 
+        }
+
         int zahl = input.nextInt();
 
         System.out.println("Du hast folgendes eingegeben: " + zahl);
