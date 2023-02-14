@@ -12,18 +12,17 @@ public class EingabenPruefen {
         System.out.println("Du hast folgendes eingegeben: " + zahl);
 
         // Verzweigung / If-Statement ...
-        if(zahl < 10) {
-
+        if(zahl < 10) 
+        {
             System.out.println(zahl + " ist kleiner als 10");
-
-        } else if(zahl == 10) {
-
+        } 
+        else if(zahl == 10) 
+        {
             System.out.println(zahl + " ist gleich 10");
-            
-        } else {
-
+        } 
+        else 
+        {
             System.out.println(zahl + " ist grösser als 10");
-
         }
 
 
