@@ -20,11 +20,25 @@ public class EingabenPruefen {
         {
             System.out.println(zahl + " ist gleich 10");
         } 
+        else if (zahl > 10 && zahl < 50)       
+        {
+            System.out.println(zahl + " liegt zwischen 10 und 50");
+        }
+        else if (zahl == 50)       
+        {
+            System.out.println(zahl + " ist gleich 50");
+        }
+        else if (zahl > 50 && zahl < 100)       
+        {
+            System.out.println(zahl + " liegt zwischen 50 und 100");
+        }
         else 
         {
-            System.out.println(zahl + " ist grösser als 10");
+            System.out.println(zahl + " ist gleich oder grösser 100");
         }
 
+        // || - logische ODER Verknüpfung
+        // && - logische UND Verknüpfung
 
         input.close();
 
