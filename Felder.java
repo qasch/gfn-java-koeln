@@ -19,10 +19,16 @@ class Felder {
             System.out.println(myIntArray[i]);
         }
 
+        String[] myStringArray = {"eins", "zwei", "drei"};
+
         System.out.println("Ausgabe mit dem Enhanced-for-Loop / for-each-Loop:");
-        for(int element : myIntArray){
+        for(String element : myStringArray){
             System.out.println(element);
         } 
+
+        // System.out.println(myIntArray);
+        // print(myList);  -> [11, 22, 33, 0, 0] 
+
 
         // Mehrdimensionalen Arrays
         int x = 5;
@@ -44,9 +50,6 @@ class Felder {
             }
         }
 
-        // System.out.println(myIntArray);
-
-        // print(myList);  -> [11, 22, 33, 0, 0] 
     }
 
 }
