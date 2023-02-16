@@ -4,8 +4,10 @@ class AutoTest {
         // Objekt vom Typ Auto erzeugen
         Auto sportwagen = new Auto("Sportwagen", "gruen", 101, 250, true, 20);          
 
-        System.out.println("Unser " + sportwagen.getBezeichnung() + " ist " + sportwagen.getFarbe() + 
-            " und hat eine Leistung von " + sportwagen.getLeistung() + " PS.");
+        // System.out.println("Unser " + sportwagen.getBezeichnung() + " ist " + sportwagen.getFarbe() + 
+        //     " und hat eine Leistung von " + sportwagen.getLeistung() + " PS.");
+
+        showAuto(sportwagen);
 
         System.out.println("aktuelle Geschwindigkeit: " + sportwagen.getGeschwindigkeit());
         System.out.println("Wir geben Gas!");
@@ -15,6 +17,7 @@ class AutoTest {
         if(!sportwagen.getUnfallfrei()) {
             System.out.println("Wir müssen in die Wetkstatt!");
         }
+
 
         // Auto lieferwagen = new Auto();          
         // lieferwagen.farbe = "weiss";
@@ -33,6 +36,12 @@ class AutoTest {
         //     System.out.println("Wir müssen in die Wetkstatt!");
         // }
 
+
+    }
+
+    public static void showAuto(Auto a){
+        System.out.println("Unser " + a.getBezeichnung() + " ist " + a.getFarbe() + 
+            " und hat eine Leistung von " + a.getLeistung() + " PS.");
 
     }
 
