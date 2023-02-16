@@ -5,7 +5,10 @@ class Auto {
     * Klassenattribute werden in der Regel alle als private oder protected deklariert, 
     * so dass kein Zugriff (lesend/schreibend) von ausserhalb der Klasse mehr möglich ist.
     *
-    * Der Zugriff erfolgt dann über Getter und Setter (s.u.)
+    * Der Zugriff erfolgt dann über Getter und Setter (s.u.).
+    * 
+    * Wenn bei *Klassenvariablen* keine direkte Initialisierung erfolgt, werden die Variablen 
+    * mit Initialwerten versehen (String: null, int: 0, double: 0.0, boolean: false ...).
     */
     private String bezeichnung;
     private String farbe;        // null
@@ -34,13 +37,14 @@ class Auto {
     }
 
     // eigener Konstruktor
+    // Sinvollerweise nutzen wir die Setter auch hier in unserem Konstruktor
     public Auto(String bezeichnung, String farbe, int kilometerstand, int leistung, boolean unfallfrei, int tankinhalt) {
-        this.bezeichnung = bezeichnung;
+        this.setBezeichnung(bezeichnung);
         this.setFarbe(farbe);
-        this.kilometerstand = kilometerstand;
-        this.leistung = leistung;
-        this.unfallfrei = unfallfrei;
-        this.setTankinhalt(tankinhalt);
+        this.setKilometerstand(kilometerstand);
+        this.setLeistung(leistung);
+        this.setUnfallfrei(unfallfrei);
+        this.setTankinhalt(0);
         this.setGeschwindigkeit(0);
     }
 
@@ -144,6 +148,10 @@ class Auto {
     
     public void hupen() {
         System.out.println("Honk, honk!");
+    }
+
+    public void showGeschwindigkeit(){
+        System.out.println("Die aktuelle Reisegeschwindigkeit beträgt: " + this.getGeschwindigkeit() + " km/h.");
     }
 
 }
