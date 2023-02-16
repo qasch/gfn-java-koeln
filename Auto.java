@@ -1,14 +1,23 @@
 class Auto {
 
-    // Eigenschaften - Attribute
-    String farbe;
+    // Eigenschaften - Attribute - Klassenvariablen
+    String farbe;        // null
     String treibstoffart;
     String marke;
+    String bezeichnung;
     int leistung;
-    int kilometerstand;
-    int geschwindigkeit;
+    int kilometerstand;  // 0
+    int geschwindigkeit; // 0
     int tankinhalt;
-    boolean unfallfrei;
+    boolean unfallfrei;  // false
+
+    // Standard Konstruktor
+    public Auto(String bezeichnung, String farbe, int kilometerstand, int leistung, boolean unfallfrei) {
+        this.bezeichnung = bezeichnung;
+        this.farbe = farbe;
+        this.kilometerstand = kilometerstand;
+        this.leistung = leistung;
+    }
 
     // Funktionalitäten - Methoden
     void beschleunigen(int faktor){
