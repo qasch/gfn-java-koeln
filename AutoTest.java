@@ -16,22 +16,22 @@ class AutoTest {
             System.out.println("Wir müssen in die Wetkstatt!");
         }
 
-        // Auto lieferwagen = new Auto();          
-        // lieferwagen.farbe = "weiss";
-        // lieferwagen.kilometerstand = 108234;
-        // lieferwagen.leistung = 75;
+        Auto lieferwagen = new Auto();          
+        lieferwagen.farbe = "weiss";
+        lieferwagen.kilometerstand = 108234;
+        lieferwagen.leistung = 75;
 
-        // System.out.println("Unser " + lieferwagen.bezeichnung + " ist " + lieferwagen.farbe + 
-        //     " und hat eine Leistung von " + lieferwagen.leistung + " PS.");
+        System.out.println("Unser " + lieferwagen.bezeichnung + " ist " + lieferwagen.farbe + 
+            " und hat eine Leistung von " + lieferwagen.leistung + " PS.");
 
-        // System.out.println("aktuelle Geschwindigkeit: " + lieferwagen.geschwindigkeit);
-        // System.out.println("Wir geben Gas!");
-        // lieferwagen.beschleunigen(5);
-        // System.out.println("aktuelle Geschwindigkeit: " + lieferwagen.geschwindigkeit);
+        System.out.println("aktuelle Geschwindigkeit: " + lieferwagen.geschwindigkeit);
+        System.out.println("Wir geben Gas!");
+        lieferwagen.beschleunigen(5);
+        System.out.println("aktuelle Geschwindigkeit: " + lieferwagen.geschwindigkeit);
 
-        // if(!lieferwagen.unfallfrei) {
-        //     System.out.println("Wir müssen in die Wetkstatt!");
-        // }
+        if(!lieferwagen.unfallfrei) {
+            System.out.println("Wir müssen in die Wetkstatt!");
+        }
 
 
     }

@@ -12,11 +12,17 @@ class Auto {
     boolean unfallfrei;  // false
 
     // Standard Konstruktor
+    public Auto() {
+
+    }
+
+    // eigener Konstruktor
     public Auto(String bezeichnung, String farbe, int kilometerstand, int leistung, boolean unfallfrei) {
         this.bezeichnung = bezeichnung;
         this.farbe = farbe;
         this.kilometerstand = kilometerstand;
         this.leistung = leistung;
+        this.unfallfrei = unfallfrei;
     }
 
     // Funktionalitäten - Methoden
