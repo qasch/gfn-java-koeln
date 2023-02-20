@@ -1,4 +1,7 @@
-class Tier:
+from abc import ABC, abstractmethod
+
+# abstrakte Klasse Tier
+class Tier(ABC):
 
     # Initializer
     def __init__(self, name, alter, art):
@@ -15,8 +18,9 @@ class Tier:
     def __private_method(self):
         pass
 
+    @abstractmethod
     def __str__(self):
-        return "Unser Tier heisst " + self.name + ", ist " + str(self.alter) + " Jahre alt und ein " + self.art
+        pass
 
 
 class Hund(Tier):
@@ -33,10 +37,10 @@ class Katze(Tier):
 
 gretl = Hund("Gretl", 9, "Hund")
 tom = Katze("Tom", 11, "Katze")
-tier = Tier("Tier", 0, "Tier")
+# tier = Tier("Tier", 0, "Tier")
 
 print(gretl.name, gretl.art)
 print(tom.name, tom.art)
 print(gretl)
 print(tom)
-print(tier)
+# print(tier)
