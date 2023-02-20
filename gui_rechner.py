@@ -6,7 +6,11 @@ def btn_close_destroy():
     frame.destroy()
 
 def btn_calc_calc():
-    pass
+    zahl_1 = int(entry_1.get())
+    zahl_2 = int(entry_2.get())
+    summe = zahl_1 + zahl_2
+
+    result.insert(0, summe)
 
 # Frame erstellen
 frame = tk.Tk()
@@ -28,7 +32,7 @@ btn_close = tk.Button(frame, text = "Close", command = btn_close_destroy)
 btn_close.place(x=200, y=120)
 
 btn_calc = tk.Button(frame, text = "Berechne", command = btn_calc_calc)
-btn_calc.place(x=300, y=120)
+btn_calc.place(x=280, y=120)
 
 # Endlosschleife, damit unser Frame weiter angezeigt wird
 frame.mainloop()
